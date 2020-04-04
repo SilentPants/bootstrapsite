@@ -1,0 +1,57 @@
+.grid{
+    background-color: rgba(128,0,128,0.5);
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    grid-template-rows: 100px auto 100px;
+}
+.header{
+    text-align: center;
+    background-color: rgba(128,0,64,0.25);
+    height: 100px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    display: table;
+}
+
+.vertical-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+.trail-entries{
+    display: grid;
+    grid-template-rows: repeat(10, 200px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+.trail-entry{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 200px;
+    background-color: rgba(230, 230, 230, 0.75);
+    border: 2px solid rgb(251, 255, 14);
+    border-radius: 25px;
+}
+.trail-info{
+    display: grid;
+    grid-template-rows: 30px auto;
+    margin-left: 2em;
+}
+.trail-image{
+    width: 196px;
+    height: 196px;
+    border-radius: 23px 0 0 23px;
+}
+.trail-title{
+    margin-top: 0;
+    font-style: oblique;
+}
+.trail-desc{
+}
+.footer{
+    text-align: center;
+    background-color: rgba(128,0,64,0.25);
+    height: 100px;
+    grid-column: 1 / 4;
+    grid-row: 3 / 3;
+    display: table;
+}
